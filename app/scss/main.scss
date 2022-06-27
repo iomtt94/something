@@ -15,7 +15,7 @@ body {
   max-width: 1062px;
   margin: 0 auto;
   &__header {
-    font-family: TTNorms;
+    font-family: 'TTNorms', Verdana, sans-serif;
     font-size: 34px;
     font-weight: bold;
     font-stretch: normal;
@@ -28,7 +28,7 @@ body {
     margin: 0 auto;
   }
   &__subheader {
-    font-family: TTNorms;
+    font-family: 'TTNorms', Verdana, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
@@ -52,7 +52,7 @@ body {
   &__link {
     display: inline-block;
     padding: 20px 25px;
-    font-family: TTNorms;
+    font-family: 'TTNorms', Verdana, sans-serif;
     font-size: 20px;
     font-weight: 500;
     font-stretch: normal;
@@ -82,7 +82,7 @@ body {
     gap: 0 137px;
   }
   &__header {
-    font-family: TTNorms;
+    font-family: 'TTNorms', Verdana, sans-serif;
     font-size: 24px;
     font-weight: bold;
     font-stretch: normal;
@@ -94,7 +94,7 @@ body {
     margin-bottom: 15px;
   }
   &__text {
-    font-family: TTNorms;
+    font-family: 'TTNorms', Verdana, sans-serif;
     font-size: 16px;
     font-weight: normal;
     font-stretch: normal;
