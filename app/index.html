@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>test</title>
+	<meta name="description" content="test">
+	<meta name="viewport" content="width=device-width">
+	<link rel="icon" href="images/favicon.png">
+	<link rel="stylesheet" href="css/app.min.css">
+	<link href='https://fonts.hlxcdn.com/fonts/fonts.css' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide-core.min.css">
+	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css"> -->
+</head>
+
+<body>
+	<!-- CUSTOM HTML -->
+	<main class="main-content">
+		<div class="wrapper-grey">
+			<section class="panels-container">
+				<h2 class="panels-container__header"></h2>
+				<h3 class="panels-container__subheader"></h3>
+				<nav class="panels-nav">
+					<ul class="panels-list">
+					  <li class="panels-list__item">
+						<a href="#tab1" data-tab="tab1" class="panels-list__link panels-list__link--active">
+						</a>
+					  </li>
+					  <li class="panels-list__item">
+						<a href="#tab2" data-tab="tab2" class="panels-list__link">
+						</a>
+					  </li>
+					  <li class="panels-list__item">
+						<a href="#tab3" data-tab="tab3" class="panels-list__link">
+						</a>
+					  </li>
+					</ul>
+				</nav>
+				<div class="slideshow-container">
+					<div id="tab1" class="panel-tab panel-tab--active fade">
+						<div class="panel-tab__left">
+							<h4 class="panel-tab__header"></h4>
+							<p class="panel-tab__text"></p>
+							<p class="panel-tab__text panel-tab__text--second"></p>
+						</div>
+						<div class="panel-tab__right">
+							<img class="panel-tab__image" src="" alt="">
+						</div>
+					</div>
+					<div id="tab2" class="panel-tab fade">
+						<div class="panel-tab__left">
+							<h4 class="panel-tab__header"></h4>
+							<p class="panel-tab__text"></p>
+							<p class="panel-tab__text panel-tab__text--second"></p>
+						</div>
+						<div class="panel-tab__right">
+							<img class="panel-tab__image" src="" alt="">
+						</div>
+					</div>
+					<div id="tab3" class="panel-tab fade">
+						<div class="panel-tab__left">
+							<h4 class="panel-tab__header"></h4>
+							<p class="panel-tab__text"></p>
+							<p class="panel-tab__text panel-tab__text--second"></p>
+						</div>
+						<div class="panel-tab__right">
+							<img class="panel-tab__image" src="" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="dots" style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span> 
+				</div>
+			</section>
+		</div>
+	</main>
+	<!-- jquery only for slider library -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

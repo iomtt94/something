@@ -1,0 +1,52 @@
+// USER VARIABLES SECTION
+$fontsize: 16px; // Body Font Size
+
+$opensans: opensans, sans-serif;
+
+
+// colors
+$text-white: #fff; // Text Color
+$accent: orange; // Accent Color
+$black: #262324;
+
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl) {
+	@font-face {
+		font-family: $fname;
+		font-style: $fstyle;
+		font-weight: $fweight;
+		// font-display: swap; // Uncomment to initially display system fonts
+		src: local($fname), url($furl) format('woff2');
+	}
+}
+
+@include font('opensans', normal, 400, '../fonts/OpenSans-Regular.ttf');
+@include font('opensans', bold, 700, '../fonts/OpenSans-Bold.ttf');
+@include font('opensans', extra-bold, 800, '../fonts/OpenSans-ExtraBold.ttf');
+
+// GENERAL DOCUMENT STYLES
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+input, textarea {
+	outline: none;
+	&:focus:required:invalid { border-color: red }
+	&:required:valid { border-color: green }
+}
+
+body {
+	font-family: $opensans;
+	font-size: $fontsize;
+	min-width: 320px;
+	position: relative;
+	color: $text-white;
+}
